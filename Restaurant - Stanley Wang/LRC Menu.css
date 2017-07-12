@@ -1,0 +1,40 @@
+html {
+  background-color: #5D5D5D;
+}
+
+#heading {
+  font-family: Monotype Corsiva;
+  font-size: 75px;
+  color: white;
+  background-color: #5D5D5D;
+  margin-left: 50px;
+}
+
+#menu_bar {
+  margin: 0 auto;
+  width: 900px;
+  background-color: #5D5D5D;
+}
+
+.table_line {
+  color: white;
+}
+
+.bar {
+  color: white;
+  text-decoration: none;
+}
+
+.bar:hover {
+  color: #FFCC66;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+#image_1 {
+  display: block;
+  margin: auto;
+  width: 700px;
+  height: 400px;
+  border: 7px solid white;
+  color: #FFFFFF;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> La Roche Cuisine </title>
+  <link type="text/css" rel="stylesheet" href="la Roche Cuisine.css" />
+</head>
+
+<body>
+  <h1 id="heading"> La Roche Cuisine </h1>
+  <hr>
+  <hr>
+
+  <table id="menu_bar">
+    <thead>
+      <th width="20%">
+              <a class="bar" href="La Roche Cuisine.html">
+                  <hr class="table_line"> Home <hr class="table_line">
+              </a>
+      </th>
+      <th width="20%">
+        <a class="bar" href="https://www.google.ca/">
+            <hr class="table_line"> About Us <hr class="table_line">
+        </a>
+      </th>
+      <th width="20%">
+        <a class="bar" href="LRC Menu.html">
+            <hr class="table_line"> Menu <hr class="table_line">
+        </a>
+      </th>
+      <th width="20%">
+        <a class="bar" href="https://www.google.ca/">
+            <hr class="table_line"> Events <hr class="table_line">
+        </a>
+      </th>
+      <th width="20%">
+        <a class="bar" href="https://www.google.ca/">
+            <hr class="table_line"> Contact <hr class="table_line">
+        </a>
+      </th>
+    </thead>
+  </table>
+
+  <img id="image_1" src="https://s-media-cache-ak0.pinimg.com/736x/ea/51/ff/ea51ff156ae30d2dd30c3be694c7f26c.jpg"/>
+
+  <br></br>
+
+  <h3 class="slogan"> La vie est trop courte pour manger de la mauvaise nourriture! </h3>
+  <h3 class="slogan"> Life's too short to be eating bad food! </h3>
+
+  <p id="one"> Taste the delights of french cuisine, freshly made in our kitchen by our experienced chefs. With delicate foods from France for irresistable prices, you'll never eat food the same again. </p>
+
+  <br></br>
+
+  <form action="LRC Menu.html">
+    <center><input id="button" type="submit" value="Browse our Menu" /></center>
+  </form>
+
+  <br></br>
+  <hr>
+  <hr>
+
+  <h2 id="Week_Specials"> This Week's Specials </h2>
+
+  <img class="specials" src="https://blog.eventshigh.com/wp-content/uploads/2015/11/Wine.jpg"/>
+  <img class="specials" src="http://2.bp.blogspot.com/-tRfbk7MoDyY/TlTl1elFymI/AAAAAAAABgk/wiJg2CA99Y0/s1600/IMG_4437.jpg"/>
+  <img class="specials" src="http://cellarmaison.com/wp-content/uploads/2013/11/29-Coq-Au-Vin.jpg"/>
+  <img class="specials" src="http://img.taste.com.au/XiSvzRk4/taste/2016/11/tartiflette-85302-1.jpeg"/>
+
+  <div class="spec_desc">
+    <p class="spec_name"> Wine </p>
+    <p> Enjoy some of France's finest and most delicate of wines such as the flavourable red wine of Cabernet Sauvignon, or the sweet taste of Chardonnay white wine. </p>
+    <p class="prices"> 50% off </p>
+  </div>
+  <div class="spec_desc">
+    <p class="spec_name"> Bouillabaisse </p>
+    <p> A traditional French fish soup that features seafood, tomatoes, onions, and garlic, all fresh from the kitchen. </p>
+    <p class="prices"> $19.99 </p>
+  </div>
+  <div class="spec_desc">
+    <p class="spec_name"> Coq au Vin </p>
+    <p> A rooster roasted in red wine, butter, brandy, bacon, onions, and garlic is of the most delectable of French treats. </p>
+    <p class="prices"> $14.99 </p>
+  </div>
+  <div class="spec_desc">
+    <p class="spec_name"> Tartiflette </p>
+    <p> A rich and traditional dish of creamy melted cheese covered in a soft layer of potatoes. </p>
+    <p class="prices"> $9.99 </p>
+  </div>
+
+<div id="all">
+  <div class="infos" id="Hours">
+    <table id="table_hours">
+      <thead>
+        <th colspan="2">
+          <hr> Hours <hr>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Monday </td>
+          <td> 9:00 AM - 10:00 PM </td>
+        </tr>
+        <tr>
+          <td> Tuesday </td>
+          <td> 9:00 AM - 10:00 PM </td>
+        </tr>
+        <tr>
+          <td> Wednesday </td>
+          <td> 9:00 AM - 10:00 PM </td>
+        </tr>
+        <tr>
+          <td> Thursday </td>
+          <td> 9:00 AM - 10:00 PM </td>
+        </tr>
+        <tr>
+          <td> Friday </td>
+          <td> 9:00 AM - 11:00 PM </td>
+        </tr>
+        <tr>
+          <td> Saturday </td>
+          <td> 9:00 AM - 11:00 PM </td>
+        </tr>
+        <tr>
+          <td> Sunday </td>
+          <td> 9:00 AM - 10:00 PM </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="infos" id="location">
+    <style>
+      #map {
+        height: 350px;
+        width: 350px;
+      }
+      </style>
+      <div id="map"></div>
+      <script>
+      function initMap() {
+        var uluru = {lat: 43.2609, lng: -79.9192};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8IEmhoBuX29ZWgOZeE1n_Zslw4nx547o&callback=initMap">
+      </script>
+
+      <p> 1280 Main St W, Hamilton, ON L8S 4L8 </p>
+  </div>
+
+  <div class="infos" id="form">
+    <h2 style="text-align: center; font-size: 20px"><hr> Make a Reservation <hr></h2>
+    <form action="https://www.google.ca/">
+      Name:<br>
+      <input type="text" name="Name"><br>
+      Email Address:<br>
+      <input type="text" name="EmailAddess"><br>
+      Phone Number:<br>
+      <input type="text" name="PhoneNumber"><br>
+      Party Size:<br>
+      <input type="text" name="PartySize"><br>
+      Date:<br>
+      <input type="text" name="Date"><br>
+      Time:<br>
+      <input type="text" name="Time"><br>
+        <br>
+      <input type="submit" onclick="alert('Thank you! Your reservation has been placed.')" value="Submit">
+    </form>
+  </div>
+
+</div>
+
+<br></br>
+<br></br>
+<hr>
+<hr>
+<br></br>
+
+<div style="margin-left: 20px;">
+  <a target="_blank" href="http://twitter.com/Twitter">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-twitter.png" alt="Twitter">
+  </a>
+  <a target="_blank" href="http://facebook.com">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-facebook.png" alt="Facebook">
+  </a>
+  <a target="_blank" href="http://plus.google.com">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-googleplus.png" alt="Google Plus">
+  </a>
+  <a target="_blank" href="http://foursquare.com">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-foursquare.png" alt="Foursquare">
+  </a>
+  <a target="_blank" href="http://yelp.com">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-yelp.png" alt="Yelp">
+  </a>
+  <a target="_blank" href="http://tripadvisor.com">
+    <img src="https://demoprimo.restaurantengine.com/wp-content/themes/primo/images/social-icon-tripadvisor.png" alt="TripAdvisor">
+  </a>
+</div>
+
+</body>
+
+</html>
